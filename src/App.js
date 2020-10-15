@@ -1,33 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import image from "./imageInSrc.png";
-import './style.css';
+
+import Address from "./Component/Profile/Address";
+import FullName from './Component/Profile/FullName';
+import ProfilPhoto from './Component/Profile/ProfilPhoto';
+
 
 function App() {
   return (
-    <div>
-      <div style={{border:"solid 1px black",maxWidth:"100vw"}}>
-
-<h1 className="title red">Your name here</h1>
-
-<br/>
-
-<img src={image} alt="flower"/>
-
-<br/>
-
-<img src="/imageInPublic.png" alt="flower"/>
-
-</div>
-
-<video width="320" height="240" controls>
-
-<source src="/myVideo.mp4" type="video/mp4" />
-
-</video>
+    <div style={{border:"2px solid black",textAlign:"center",backgroundColor:"lightgrey"}}>
+     <FullName/>
+     <ProfilPhoto/>
+     <Address/>
     </div>
   );
-}
+};
 
 export default App;
